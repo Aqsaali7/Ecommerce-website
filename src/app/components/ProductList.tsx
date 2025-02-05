@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const products = [
 
@@ -7,7 +8,7 @@ const products = [
         title: "cheese pizza ",
         category: "delights",
         price: " Rs 499.00",
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozvXSYQqrhAw12GJN_mGU6zgtrgtfNscCZA&s",
+        ImageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRozvXSYQqrhAw12GJN_mGU6zgtrgtfNscCZA&s",
         bgColor: "bg-green-800",
     },
 
@@ -16,7 +17,7 @@ const products = [
         title: " crazy shawarma ",
         category: "delights",
         price: "Rs 399.00",
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWMlrxNnkEb_FVEegl0HXPjGsNOQ0KlfmNvItoPWl1GruoI9nuptlTdagW1NpPQ-4L2mE&usqp=CAU",
+        ImageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWMlrxNnkEb_FVEegl0HXPjGsNOQ0KlfmNvItoPWl1GruoI9nuptlTdagW1NpPQ-4L2mE&usqp=CAU",
         bgColor: "bg-green-800",
     },
 
@@ -26,7 +27,7 @@ const products = [
         title: "Pizza Slice ",
         category: "tastefull",
         price: "RS 299.00",
-        imageUrl: "https://png.pngtree.com/png-vector/20240715/ourmid/pngtree-vegetable-italian-slice-piece-pizza-vintage-png-image_13059928.png",
+        ImageUrl: "https://png.pngtree.com/png-vector/20240715/ourmid/pngtree-vegetable-italian-slice-piece-pizza-vintage-png-image_13059928.png",
         bgColor: "bg-green-800",
     },
 ];
@@ -48,7 +49,7 @@ export default function ProductList() {
 
                         </div>
 
-                        <img className="relative w-50 " src={product.imageUrl} alt={product.title} />
+                        <Image className="relative w-50 " src={product.ImageUrl} alt={product.title} />
                     </div>
 
                     <div className="relative text-black px-6 pb-6 mt-6">

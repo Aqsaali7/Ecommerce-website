@@ -3,6 +3,7 @@ import { GiCartwheel, GiFullPizza, GiShoppingCart } from "react-icons/gi";
 import { FaSearch } from "react-icons/fa";
 import { GiScooter } from "react-icons/gi";
 import { CiShoppingCart } from "react-icons/ci";
+import Image from "next/image";
 
 export default function NavBar() {
     return (
@@ -29,10 +30,13 @@ export default function NavBar() {
  </p>
 
 <GiShoppingCart className="p-1 w-8 h-8 text-emerald-700 realative "/>
-<img
+<Image
+width={823}
+height={432}
 className="inline-block w-8 h-8 rounded-full ring-2"
 src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
 alt="use avtar"
+
 />
 
 

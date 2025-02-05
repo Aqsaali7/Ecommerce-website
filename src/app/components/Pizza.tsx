@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const products = [
 
@@ -7,7 +8,7 @@ const products = [
         title: "Alferado Pasta ",
         category: "hot",
         price: " Rs 370.00",
-        imageUrl: "https://www.recipetineats.com/tachyon/2017/03/One-Pot-Chicken-Alfredo-2.jpg",
+        ImageUrl: "https://www.recipetineats.com/tachyon/2017/03/One-Pot-Chicken-Alfredo-2.jpg",
         bgColor: "bg-green-800",
     },
 
@@ -16,7 +17,7 @@ const products = [
         title: " Lasagna ",
         category: "delights",
         price: "Rs 399.00",
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGohv2HN7DLOcihJB3LsKEyBJxm4e6mFanqvvFA2w8mmK1wwf67ATyK8tJJ4bi_ZMncw&usqp=CAU",
+        ImageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZGohv2HN7DLOcihJB3LsKEyBJxm4e6mFanqvvFA2w8mmK1wwf67ATyK8tJJ4bi_ZMncw&usqp=CAU",
         bgColor: "bg-green-800",
     },
 
@@ -26,7 +27,7 @@ const products = [
         title: "Lemon Pasta ",
         category: "tastefull",
         price: "RS 299.00",
-        imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHnUTpZr5BGW-oko8nk061IMYIDu8XmbS6wxGqM7CYn7KbAFWCYqY58wTYQjlB0Jyoko&usqp=CAU",
+        ImageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHnUTpZr5BGW-oko8nk061IMYIDu8XmbS6wxGqM7CYn7KbAFWCYqY58wTYQjlB0Jyoko&usqp=CAU",
         bgColor: "bg-green-800",
     },
 ];
@@ -48,7 +49,7 @@ export default function Pizza() {
 
                         </div>
 
-                        <img className="relative w-50 " src={product.imageUrl} alt={product.title} />
+                        <Image className="relative w-50 " src={product.ImageUrl} alt={product.title} />
                     </div>
 
                     <div className="relative text-black px-6 pb-6 mt-6">
