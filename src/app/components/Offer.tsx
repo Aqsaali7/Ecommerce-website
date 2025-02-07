@@ -24,7 +24,8 @@ type Offer = {
 },
     ];
 
-     function handleOfferClick (_description: string)  : void {
+
+     function handleOfferClick( _string: string): void {
          throw new Error("Function not implemented.");
      }
 
