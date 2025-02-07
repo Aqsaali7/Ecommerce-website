@@ -24,10 +24,19 @@ type Offer = {
 },
     ];
 
+    function handleOfferClick(offer: Offer): void {
+        // You can now use the full `offer` object to access `title` and `description`
+        console.log(`Offer clicked: ${offer.title} - ${offer.description}`);
+        // Here you can implement further logic to handle the click, for example:
+        // - Show a modal with the offer details
+        // - Redirect to a page with more information
+        // - etc.
+    }
 
-     function handleOfferClick( _string: string): void {
-         throw new Error("Function not implemented.");
-     }
+
+
+
+
 
     return(
         <section className="py-10">
@@ -36,7 +45,7 @@ type Offer = {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {offers.map((offer,index) => (
 <button key ={index}
-onClick={() => handleOfferClick(offer.description)}
+onClick={() => handleOfferClick(offer)}
 className="bg-white shadow-lg rounded-lg text-center hover:bg-emerald-700 transition duration-300 transform hover:scale-105">
 <h3 className="text-2xl font-semibold text-black">{offer.title}</h3>
 <p className="text-black mt-3">{offer.description}</p>
