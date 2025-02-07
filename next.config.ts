@@ -1,45 +1,7 @@
-import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
+
+module.exports = {
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'cdn.pixabay.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'example.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'another-domain.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'cdn.tasteatlas.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'img.tastelife.tv',
-      },
-      {
-        protocol: 'https',
-        hostname: 'preppykitchen.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'encrypted-tbn0.gstatic.com',
-      },
-      
-
-
-
-
-
-
-    ],
+    domains: ['encrypted-tbn0.gstatic.com', 'cdn.tasteatlas.com', 'img.tastelife.tv', 'preppykitchen.com', 'cdn.pixabay.com'],
   },
 };
-
-export default nextConfig;

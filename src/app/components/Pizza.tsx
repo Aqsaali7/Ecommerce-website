@@ -27,7 +27,8 @@ const products = [
         title: "Lemon Pasta ",
         category: "tastefull",
         price: "RS 299.00",
-        ImageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHnUTpZr5BGW-oko8nk061IMYIDu8XmbS6wxGqM7CYn7KbAFWCYqY58wTYQjlB0Jyoko&usqp=CAU",
+        ImageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHnUTpZr5BGW-oko8nk061IMYIDu8XmbS6wxGqM7CYn7KbAFWCYqY58wTYQjlB0Jyoko&usqp=CAU"
+        ,
         bgColor: "bg-green-800",
     },
 ];
@@ -49,7 +50,10 @@ export default function Pizza() {
 
                         </div>
 
-                        <Image className="relative w-50 " src={product.ImageUrl} alt={product.title} />
+                        <Image
+                        width={40}
+                        height={40}
+                         className="relative w-50 " src={product.ImageUrl} alt={product.title} />
                     </div>
 
                     <div className="relative text-black px-6 pb-6 mt-6">
