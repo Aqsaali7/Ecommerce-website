@@ -11,7 +11,6 @@ const Menu = () => {
     const [cart, setCart] = useState<Product[]>([]);
     const [showCart, setShowCart] = useState(false);
     const [isCheckout, setIsCheckout] = useState(false);
-    const router = useRouter();
 
     useEffect(() => {
         async function fetchProducts() {

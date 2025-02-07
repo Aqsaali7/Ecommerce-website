@@ -1,8 +1,7 @@
 import React from "react";
-import { GiCartwheel, GiFullPizza, GiShoppingCart } from "react-icons/gi";
+import { GiFullPizza, GiShoppingCart } from "react-icons/gi";
 import { FaSearch } from "react-icons/fa";
 import { GiScooter } from "react-icons/gi";
-import { CiShoppingCart } from "react-icons/ci";
 import Image from "next/image";
 
 export default function NavBar() {
